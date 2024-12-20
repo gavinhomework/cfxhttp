@@ -1,13 +1,13 @@
 import { connect } from 'cloudflare:sockets'
 
 // configurations
-const UUID = '' // vless UUID
-const PROXY = '' // (optional) reverse proxy for CF websites. e.g. example.com
+const UUID = '1977f4fe-d638-4ffe-a616-e03847405513' // vless UUID
+const PROXY = 'ProxyIP.US.fxxk.dedyn.io' // (optional) reverse proxy for CF websites. e.g. example.com
 const LOG_LEVEL = 'info' // debug, info, error, none
-const TIME_ZONE = 0 // timestamp time zone of logs
+const TIME_ZONE = 8 // timestamp time zone of logs
 
 const UPSTREAM_DOH = 'https://dns.google/dns-query' // Upstream DNS over HTTP(S) server
-const DOH_QUERY_PATH = '' // DNS over HTTP(S) path, empty means disabled, e.g. '/path/to/doh-query'
+const DOH_QUERY_PATH = '/doh-query' // DNS over HTTP(S) path, empty means disabled, e.g. '/path/to/doh-query'
 
 // source code
 const BUFFER_SIZE = 128 * 1024 // download/upload buffer size in bytes
